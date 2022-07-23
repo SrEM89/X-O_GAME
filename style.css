@@ -1,0 +1,96 @@
+select {
+    border: 1px solid #3498db;
+    padding: 5px 20px;
+}
+
+.player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.player img {
+    margin: 20px 0 0 20px;
+}
+
+.btn {
+    font-size: 16px;
+    border: 1px solid #3498db;
+    background: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s all linear;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+}
+
+.btn:hover {
+    color: #FFF;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+}
+
+.btn::before {
+    top: 0;
+    border-radius: 0 0 100% 5%;
+}
+
+.btn:hover::before {
+    height: 180%;
+}
+
+.btn_end {
+    font-size: 16px;
+    border: 1px solid #db3434;
+    background: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s all linear;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+}
+
+.btn_end:hover {
+    color: #FFF;
+}
+
+.btn_end::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: #db3434;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+}
+
+.btn_end::before {
+    top: 0;
+    border-radius: 0 0 100% 5%;
+}
+
+.btn_end:hover::before {
+    height: 180%;
+}
+
+.table-xo {
+    width: 100px;
+    height: 100px;
+    color: #FFF;
+    font-weight: bold;
+    margin: 5px;
+}
